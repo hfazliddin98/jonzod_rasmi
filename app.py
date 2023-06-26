@@ -6,7 +6,7 @@ import plotly.express as px
 
 
 # deploy qilsh uchun os ni toglilash uchun
-plt = platform.sistem()
+plt = platform.system()
 if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 
 # title
