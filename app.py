@@ -7,8 +7,7 @@ import plotly.express as px
 
 # deploy qilsh uchun os ni toglilash uchun
 plt = platform.sistem()
-if plt == 'Linux':
-    pathlib.WindowsPath = pathlib.PosixPath
+if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 
 # title
 st.title('Jonzodlarni (Ayiq, Baliq, Qushlarni) aniqlovchi model')
