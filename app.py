@@ -3,7 +3,11 @@ import streamlit as st
 import pathlib
 import plotly.express as px
 
-pathlib.PosixPath = pathlib.WindowsPath
+
+# deploy qilsh uchun os ni toglilash uchun
+plt = platform.sistem()
+if plt == 'Linux':
+    pathlib.WindowsPath = pathlib.PosixPath
 
 # title
 st.title('Jonzodlarni (Ayiq, Baliq, Qushlarni) aniqlovchi model')
